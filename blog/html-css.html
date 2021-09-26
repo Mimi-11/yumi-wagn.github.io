@@ -1,67 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="stylesheet" href="/styles/main.css">
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Press+Start+2P&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital@1&family=Open+Sans&family=Press+Start+2P&display=swap" rel="stylesheet">
-        
-    </head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/styles/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital@1&family=Open+Sans&family=Press+Start+2P&display=swap"
+        rel="stylesheet">
+
+</head>
 
 
-    <title>Technical Log</title>
+<title>Technical Log</title>
 
-    <main>
+<main>
 
     <div class="cactus">🌵</div>
 
-      <header>
+    <header>
         <div class="heading-style">
 
             <h1><a href="/../index.html">🖱️</a>Yumi's Blog</h1>
-        
+
             <nav>
                 <ul>
-                   
-                  <li><a href="/blog/identity-values.html">About me</a></li>
-          
-                  <li><a href="/blog/html-css.html">Technical Log</a></li>
-                  
-                   
+
+                    <li><a href="/blog/identity-values.html">About me</a></li>
+
+                    <li><a href="/blog/html-css.html">Technical Log</a></li>
+
+
                 </ul>
             </nav>
         </div>
-      </header>
+    </header>
 
-        <body>
+    <body>
 
-    
-            <article>
-            
-            
-               <div id="article-style">
-                <h2>CSS position values:<br  />Relative, Absolute, and Fixed</h2><br  />
+
+        <article>
+
+
+            <div id="article-style">
+                <h2>CSS position values:<br />Relative, Absolute, and Fixed</h2><br />
                 <h3>• What is the position property value?</h3>
                 <p>The position property value is a positioning method for element layout.
-                   There are 5 different types of position values: 
-                   <ul>
-                       <li><span class="tag">Static</span></li>
-                       <li><span class="tag">Relative</span></li>
-                       <li><span class="tag">Absolute</span></li>
-                       <li><span class="tag">Fixed</span></li>
-                       <li><span class="tag">Sticky</span></li>
-                   </ul> 
+                    There are 5 different types of position values:
+                <ul>
+                    <li><span class="tag">Static</span></li>
+                    <li><span class="tag">Relative</span></li>
+                    <li><span class="tag">Absolute</span></li>
+                    <li><span class="tag">Fixed</span></li>
+                    <li><span class="tag">Sticky</span></li>
+                </ul>
                 </p>
-                <p>In this article, we mainly discuss the differences between relative, absolute, and fixed positioning.</p>
+                <p>In this article, we mainly discuss the differences between relative, absolute, and fixed positioning.
+                </p>
                 <h3>• Relative</h3>
-                <p>An element with <span class="tag">Position: Relative;</span> is placed in relation to its default position.
-                    The <span class="tag">top</span>, <span class="tag">right</span>, <span class="tag">bottom</span>, and <span class="tag">left</span> properties can be used to adjust the element away from its default position.
-                    When an element is relatively positioned, its default space will remain and will not be automatically taken by other elements. 
+                <p>An element with <span class="tag">Position: Relative;</span> is placed in relation to its default
+                    position.
+                    The <span class="tag">top</span>, <span class="tag">right</span>, <span class="tag">bottom</span>,
+                    and <span class="tag">left</span> properties can be used to adjust the element away from its default
+                    position.
+                    When an element is relatively positioned, its default space will remain and will not be
+                    automatically taken by other elements.
                 </p>
                 <img class="article-img" src="/styles/prelative.png" alt="Relative Position example">
-                <p>An element with <span class="tag">Position: Relative;</span> is often used as a parent (i.e. to nest an element inside) to a <span class="tag">Position: Absolute;</span> element.
+                <p>An element with <span class="tag">Position: Relative;</span> is often used as a parent (i.e. to nest
+                    an element inside) to a <span class="tag">Position: Absolute;</span> element.
                     Why? We are talking about it just now.
 
                 </p>
@@ -69,23 +78,30 @@
 
 
                 <h3>• Absolute</h3>
-                <p>When an element is set <span class="tag">Position: Absolute;</span>, it will be positioned relative to the closest positioned parent.
-                    If an element with absolute position has no positioned parent, it goes up to the grandparent element or the document body. 
-                    
+                <p>When an element is set <span class="tag">Position: Absolute;</span>, it will be positioned relative
+                    to the closest positioned parent.
+                    If an element with absolute position has no positioned parent, it goes up to the grandparent element
+                    or the document body.
+
                 </p>
                 <p>
-                    Also, <span class="tag">Position: Absolute;</span> removes the positioned element from the document flow.
-                    As the example shows, when box2 is set <span class="tag">Position: Absolute;</span>, box3 automatically takes its default space.
+                    Also, <span class="tag">Position: Absolute;</span> removes the positioned element from the document
+                    flow.
+                    As the example shows, when box2 is set <span class="tag">Position: Absolute;</span>, box3
+                    automatically takes its default space.
                     Box2 is now floating above box3 and can cover other elements like box1.
                 </p>
                 <img class="article-img" src="/styles/pabsolute.png" alt="Absolute Position example">
 
                 <h3>• Fixed</h3>
-                <p>You can use <span class="tag">Position: fixed;</span> to position an element relative to the viewport.                                                         
-                   The fixed positioned element stays in the exact same place of your screen window even if you are scrolling.
-                   So, if you want to put ads on your website, make sure you use the fixed position!
+                <p>You can use <span class="tag">Position: fixed;</span> to position an element relative to the
+                    viewport.
+                    The fixed positioned element stays in the exact same place of your screen window even if you are
+                    scrolling.
+                    So, if you want to put ads on your website, make sure you use the fixed position!
                 </p>
-                <p>If you have noticed the little cactus on the left side of the article and are curious about the code:</p>
+                <p>If you have noticed the little cactus on the left side of the article and are curious about the code:
+                </p>
                 <img class="article-img2" src="/styles/pfixed.png" alt="Absolute Position example">
 
 
@@ -96,18 +112,16 @@
 
 
 
-               </div>
-            
-            
-      
-            </article> 
-            
-       
-
-        </body>
-    </main>
+            </div>
 
 
+
+        </article>
+
+
+
+    </body>
+</main>
 
 
 
@@ -131,4 +145,6 @@
 
 
 
-    </html>
+
+
+</html>

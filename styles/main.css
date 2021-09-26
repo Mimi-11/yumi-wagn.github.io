@@ -53,6 +53,14 @@
 
   }
 
+  h4 {
+    font-family: 'Share Tech Mono', Ubuntu;
+    font-size: 23px;
+    line-height: 1.7;
+    font-weight: bold;
+
+  }
+
   nav {
     font-family: 'Press Start 2P', cursive;
     display: flex;
